@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vrlp.css">
+    <title>VR CAMP LP</title>
+  </head>
+
+  <body>
+
+      <a-scene>
+        <a-assets>
+          <img id="skyTexture" src="img/space-2638158.jpg">
+          <!--
+            <audio id="bgm" src="sound/star_wars.mp3" preload="auto"></audio>
+          -->
+          <!--
+          <a-asset-item id="city-obj"  src="3d/Miami_2525/Miami 2525/Miami 2525.ojb"></a-asset-item>
+          <a-asset-item id="city-mtl"  src="3d/Miami_2525/Miami 2525/Miami_2525.mtl"></a-asset-item>
+        -->
+        </a-assets>
+
+        <!--
+          <a-sound id="bg_sound" src="#bgm" autoplay="true" position="0 0 0"></a-sound>
+        -->
+
+        <a-sky id="sky" radius="5000"></a-sky>
+
+        <a-entity camera look-controls>
+          <a-cursor></a-cursor>
+        </a-entity>
+
+          <!--
+            <a-obj-model src="#city-obj" mtl="#city-mtl" position="0 0 -4 " scale="0.01 0.01 0.01"></a-obj-model>
+          -->
+          <a-text value="VR CAMP" id="VC" font="font/V-GERB(bold)-msdf.json" negate="false" scale="9 9 1" position="0 3.5 -10" align="center"
+                  geometry="primitive:plane; width:0.9; height:0.4"
+                  material="opacity:0.0; color:red"
+                  ></a-text>
+
+          <a-text value="さあ、飛び出せ" id="jump_text" font="font/GenEiKoburiMinT-R-msdf.json" negate="false" scale="6 6 1" position="0 2.5 -10" align="center"></a-text>
+
+          <a-box color="#0095DD" position="0 -1 -6" id="start_box" rotation="20 45 0" scale="1 1 1">
+            <a-animation attribute="rotation"
+                         dur="5000"
+                         from="20 45 0"
+                         to="20 360 0"
+                         direction="alternate"
+                         repead="indefinite"
+                         easing="ease"
+                         ></a-animation>
+          </a-box>
+
+          <a-entity id="STAR_text"
+                    position="0 0 0"
+                    scale="5 5 1"
+                    rotation="0 0 0"
+                    text="anchor: center; width: 1.5; color: #FFFF00;
+                          value: The FIRST ORDER reigns. Having decimated the peaceful Republic, Supreme Leader Snoke now deploys his merciless legions to seize military control of the galaxy.
+                                 Only General Leia Organa's band of RESISTANCE fighters stand against the rising tyranny, certain that Jedi Master Luke Skywalker will return and restore a spark of hope to the fight.
+                                 But the Resistance has been exposed. As the First Order speeds toward the rebel base, the brave heroes mount a desperate escape....">
+          </a-entity>
+
+          <!-- heightを 1 -> 8 にすることで縦に伸びるアニメーションを作る -->
+          <a-plane id="plane1" color="blue" height="1" width="4"
+                   position="-5 0 -7.5" opacity="0.5">
+            <a-animation attribute="height" begin="fade1" to="8"></a-animation>
+            <a-animation attribute="scale" begin="fade2" to="1.2 1.2 1.2"></a-animation>
+          </a-plane>
+
+
+      </a-scene>
+
+    <script>
+      var scene = document.querySelector('a-scene');
+
+      /* 球二つを追加して、アニメーションも足すスクリプト
+
+      var sphere = document.createElement('a-sphere');
+      sphere.setAttribute('color', '#FF9500');
+      sphere.setAttribute('radius', '0.75');
+      sphere.setAttribute('position', '0 0 -4');
+      scene.appendChild(sphere);
+
+      var sphere2 = document.createElement('a-sphere');
+      sphere2.setAttribute('color', '#00FF00');
+      sphere2.setAttribute('radius', '0.75');
+      sphere2.setAttribute('position', '0 0 -4');
+      scene.appendChild(sphere2);
+      var t = 0;
+      function render() {
+        if(t >= 360.0) t = 0;
+        t += 0.01;
+        requestAnimationFrame(render);
+        sphere.setAttribute('position', ''+(2 * Math.cos(t*2))+' 0 '+(2 * Math.sin(t*2) -6)+'');
+        sphere2.setAttribute('position', ''+(2 * Math.cos(t*2 + 30))+' 0 '+(2 * Math.sin(t*2 + 30) -6)+'');
+      }
+      render();
+
+      // カーソルが入った時
+      sphere.addEventListener('mouseenter', function () {
+      sphere.setAttribute('scale', {x: 2, y: 2, z: 2});
+      });
+
+      sphere2.addEventListener('mouseenter', function () {
+      sphere2.setAttribute('scale', {x: 2, y: 2, z: 2});
+      });
+
+      // カーソルから外れた時
+      sphere.addEventListener('mouseleave', function () {
+      sphere.setAttribute('scale', {x: 1, y: 1, z: 1});
+      });
+
+      sphere2.addEventListener('mouseleave', function () {
+      sphere2.setAttribute('scale', {x: 1, y: 1, z: 1});
+      });
+
+      */
+
+  </script>
+  <script type="text/javascript" src="js/VRLP.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/Loading.js"></script>
+  </body>
+</html>
