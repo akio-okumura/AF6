@@ -72,8 +72,8 @@ newmtl Material__52
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka .\Textures\worldmap-worldmap-photos-wallpapers-galleries-full-hd_50290fb555fd4_w1500.jpg
-	map_Kd .\Textures\worldmap-worldmap-photos-wallpapers-galleries-full-hd_50290fb555fd4_w1500.jpg
+	map_Ka ./Textures/worldmap-worldmap-photos-wallpapers-galleries-full-hd_50290fb555fd4_w1500.jpg
+	map_Kd ./Textures/worldmap-worldmap-photos-wallpapers-galleries-full-hd_50290fb555fd4_w1500.jpg
 
 newmtl wire_176026026
 	Ns 32
@@ -96,8 +96,8 @@ newmtl Material__55
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka .\Textures\ravi_book.png
-	map_Kd .\Textures\ravi_book.png
+	map_Ka ./Textures/ravi_book.png
+	map_Kd ./Textures/ravi_book.png
 
 newmtl wire_141007058
 	Ns 32
@@ -120,8 +120,8 @@ newmtl Material__54
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka .\Textures\book_cover_redesign_by_justmardesign-d30nmeh.png
-	map_Kd .\Textures\book_cover_redesign_by_justmardesign-d30nmeh.png
+	map_Ka ./Textures/book_cover_redesign_by_justmardesign-d30nmeh.png
+	map_Kd ./Textures/book_cover_redesign_by_justmardesign-d30nmeh.png
 
 newmtl Material__53
 	Ns 10.0000
@@ -134,8 +134,8 @@ newmtl Material__53
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka .\Textures\book2.png
-	map_Kd .\Textures\book2.png
+	map_Ka ./Textures/book2.png
+	map_Kd ./Textures/book2.png
 
 newmtl Material__33
 	Ns 10.0000
@@ -148,8 +148,8 @@ newmtl Material__33
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka .\Textures\book2.png
-	map_Kd .\Txtures\book2.png
+	map_Ka ./Textures/book2.png
+	map_Kd ./Txtures/book2.png
 
 newmtl Material__34
 	Ns 10.0000
